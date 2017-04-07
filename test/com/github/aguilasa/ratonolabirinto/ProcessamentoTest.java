@@ -9,7 +9,7 @@ import com.github.aguilasa.ratonolabirinto.utils.Utils;
 public class ProcessamentoTest {
 
 	@Test
-	public void testGetResultado01() {
+	public void testGetResultado01() throws Exception {
 		StringBuilder dados = Utils.carregaArquivo("entradas/01.txt");
 		Processamento processamento = new Processamento();
 		processamento.processar(dados.toString());
@@ -17,7 +17,7 @@ public class ProcessamentoTest {
 	}
 
 	@Test
-	public void testGetResultado02() {
+	public void testGetResultado02() throws Exception {
 		StringBuilder dados = Utils.carregaArquivo("entradas/02.txt");
 		Processamento processamento = new Processamento();
 		processamento.processar(dados.toString());

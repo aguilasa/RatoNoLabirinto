@@ -31,7 +31,7 @@ public class Entrada {
 		return entradaProcessada;
 	}
 
-	public void processarDadosEntrada() {
+	public void processar() {
 		String[] linhas = dadosEntrada.split("\r?\n");
 		for (String linha : linhas) {
 			String[] valores = linha.split(" ");

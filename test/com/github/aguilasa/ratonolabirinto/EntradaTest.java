@@ -14,7 +14,7 @@ public class EntradaTest {
 	public void testProcessarDadosEntrada01() {
 		StringBuilder dados = Utils.carregaArquivo("entradas/01.txt");
 		Entrada entrada = new Entrada(dados.toString());
-		entrada.processarDadosEntrada();
+		entrada.processar();
 		List<List<String>> lista = entrada.getEntradaProcessada();
 		assertEquals("Número de linhas arquivo 01", 21, lista.size());
 	}
@@ -23,7 +23,7 @@ public class EntradaTest {
 	public void testProcessarDadosEntrada02() {
 		StringBuilder dados = Utils.carregaArquivo("entradas/02.txt");
 		Entrada entrada = new Entrada(dados.toString());
-		entrada.processarDadosEntrada();
+		entrada.processar();
 		List<List<String>> lista = entrada.getEntradaProcessada();
 		assertEquals("Número de linhas arquivo 01", 12, lista.size());
 	}

@@ -1,7 +1,5 @@
 package com.github.aguilasa.ratonolabirinto.grafos;
 
-import java.util.List;
-
 /**
  * Classe responsável por representar um grafo
  * 
@@ -11,7 +9,7 @@ import java.util.List;
 public class GrafoLabirinto {
 	private ListaVertices vertices = new ListaVertices();
 
-	public List<Vertice> getVertices() {
+	public ListaVertices getVertices() {
 		return vertices;
 	}
 

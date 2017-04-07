@@ -70,4 +70,9 @@ public class Vertice {
 		return true;
 	}
 
+	@Override
+	public String toString() {
+		return nome;
+	}
+
 }
