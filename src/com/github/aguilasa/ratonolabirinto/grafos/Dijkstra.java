@@ -9,7 +9,6 @@ public class Dijkstra {
 	}
 
 	private static int minDistance(int dist[], boolean sptSet[]) {
-		// Initialize min value
 		int min = Integer.MAX_VALUE, min_index = 0;
 
 		for (int v = 0; v < V; v++)

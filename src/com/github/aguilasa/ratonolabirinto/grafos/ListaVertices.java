@@ -12,6 +12,7 @@ public class ListaVertices extends LinkedList<Vertice> {
 		if (index > -1) {
 			return get(index);
 		}
+		vertice.setIndice(size());
 		add(vertice);
 		return vertice;
 	}
