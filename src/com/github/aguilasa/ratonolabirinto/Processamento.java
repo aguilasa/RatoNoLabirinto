@@ -3,6 +3,7 @@ package com.github.aguilasa.ratonolabirinto;
 import java.util.List;
 
 import com.github.aguilasa.ratonolabirinto.grafos.BFS;
+import com.github.aguilasa.ratonolabirinto.grafos.Dijkstra;
 import com.github.aguilasa.ratonolabirinto.grafos.GrafoLabirinto;
 import com.github.aguilasa.ratonolabirinto.grafos.Vertice;
 
@@ -48,7 +49,8 @@ public class Processamento {
 			throw new Exception("Número de arestas diferente do definido na entrada.");
 		}
 
-		Vertice s = grafo.getVertices().find("Entrada");
+		Vertice verticeEntrada = grafo.getVertices().find("Entrada");
+		Vertice s = verticeEntrada;
 		if (s == null) {
 			throw new Exception("Não foi encontrada a definição do vértice de entrada.");
 		}
@@ -64,6 +66,17 @@ public class Processamento {
 		}
 		
 		System.out.println(sb.toString());
+		
+		for(Vertice v : grafo.getVertices()) {
+			System.out.println(v);
+		}
+		System.out.println();
+		
+		Vertice verticeSaida = grafo.getVertices().find("Saida");
+		Vertice verticeQueijo = grafo.getVertices().find("*");
+		
+		Dijkstra dijkstra = new Dijkstra();
+		dijkstra.dijkstra(matriz, verticeEntrada.getIndice());
 
 		BFS bfs = new BFS(grafo, s);
 		bfs.bfs();

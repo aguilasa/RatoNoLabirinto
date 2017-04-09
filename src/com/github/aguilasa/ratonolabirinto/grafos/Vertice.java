@@ -72,7 +72,7 @@ public class Vertice {
 
 	@Override
 	public String toString() {
-		return nome;
+		return String.format("%d: %s", indice, nome);
 	}
 
 }
