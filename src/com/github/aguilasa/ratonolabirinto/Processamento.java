@@ -1,8 +1,6 @@
 package com.github.aguilasa.ratonolabirinto;
 
-import java.util.Arrays;
 import java.util.List;
-import java.util.function.IntUnaryOperator;
 
 import com.github.aguilasa.ratonolabirinto.grafos.CaminhoMinimo;
 import com.github.aguilasa.ratonolabirinto.grafos.GrafoLabirinto;

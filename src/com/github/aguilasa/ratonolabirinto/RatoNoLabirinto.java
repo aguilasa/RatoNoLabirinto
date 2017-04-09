@@ -2,6 +2,13 @@ package com.github.aguilasa.ratonolabirinto;
 
 import com.github.aguilasa.ratonolabirinto.utils.Utils;
 
+/**
+ * Classe principal
+ * 
+ * @author Ingmar.Aguiar, Diovani Motta
+ * 
+ */
+
 public class RatoNoLabirinto {
 
 	public static void main(String[] args) {
