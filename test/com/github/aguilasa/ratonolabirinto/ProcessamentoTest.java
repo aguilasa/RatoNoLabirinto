@@ -23,5 +23,21 @@ public class ProcessamentoTest {
 		processamento.processar(dados.toString());
 		assertEquals("Saída esperada", 6, processamento.getResultado());
 	}
+	
+	@Test
+	public void testGetResultado03() throws Exception {
+		StringBuilder dados = Utils.carregaArquivo("entradas/03.txt");
+		Processamento processamento = new Processamento();
+		processamento.processar(dados.toString());
+		assertEquals("Saída esperada", 8, processamento.getResultado());
+	}
+	
+	@Test
+	public void testGetResultado04() throws Exception {
+		StringBuilder dados = Utils.carregaArquivo("entradas/04.txt");
+		Processamento processamento = new Processamento();
+		processamento.processar(dados.toString());
+		assertEquals("Saída esperada", 9, processamento.getResultado());
+	}
 
 }
